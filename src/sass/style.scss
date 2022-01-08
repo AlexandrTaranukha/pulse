@@ -1,0 +1,230 @@
+@import 'base/variables';
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+.container{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+@import 'blocks/promo';
+@import 'blocks/header.scss';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+@import 'blocks/titles';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/feed';
+@import 'blocks/footer';
+@import 'blocks/modal';
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 800px;
+    }
+    .catalog__content{
+        justify-content: center;
+    }
+    .catalog-item:nth-child(odd){
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 991px){
+    .container{
+        max-width: 700px;
+    }
+    .title{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .button_main{
+        width: 250px;
+    }
+    .promo{
+        background: url(../img/main.jpg) left (center/cover) no-repeat;
+    }
+    .advantages__wrapper{
+        margin-top: 55px;
+    }
+    .advantages__item{
+        max-width: 200px;
+    }
+    .advantages__subtitle{
+        font-size: 16px;
+    }
+    .advantages__descr{
+        font-size: 12px;
+    }
+    .carousel__inner{
+        width: 650px;
+    }
+    .slide{
+        width: 650px;
+    }
+}
+
+@media (max-width: 767px){
+    .container{
+        max-width: 500px;
+    }
+    .header__logo{
+        width: 150px;
+    }
+    .header__official{
+        font-size: 12px;
+    }
+    .header__official span{
+        font-size: 14px;
+    }
+    .button{
+        width: 120px;
+        font-size: 10px;
+    }
+    .button_main{
+        width: 150px;
+    }
+    .button_submit{
+        width: 100%;
+        font-size: 14px;
+    }
+    .header__phone{
+        font-weight:500;
+        font-size: 14px;
+    }
+    .promo__header{
+        font-size: 35px;
+    }
+    .promo__subheader{
+        font-size: 20px;
+    }
+    .promo__icons{
+        width: 350px;
+    }
+    .advantages__item{
+        max-width: 160px;
+    }
+    .advantages__subtitle{
+        font-size: 14px;
+    }
+    .advantages__descr{
+        font-size: 10px;
+    }
+    .carousel__inner{
+        width: 530px;
+    }
+    .slide{
+        width: 530px;
+    }
+    .catalog-item:nth-child(odd){
+        margin-right: 0;
+    }
+    .feed__item{
+        display: inline-block;  
+    }
+    .feed__img{
+        width: 145px;
+        height: 145px;
+        margin-left: 50px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 575px){
+    .container{
+        max-width: 300px;
+    }
+    .header{
+        display: inline-block;
+    }
+    .header__logo{
+        width: 120px;
+    }
+    .header__official{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .header__official span{
+        font-size: 16px;
+    }
+    .header__contacts{
+        display: inline-block;
+        margin-top: 10px;
+        margin-left: 32px;
+    }
+    .header__phone{
+        font-size: 16px;
+    }
+    .button{
+        width: 100%;
+        font-size: 12px;
+    }
+    .promo__icons{
+        width: 300px;
+    }
+    .advantages__wrapper{
+        display: inline-block;
+    }
+    .advantages__item{
+        max-width: 250px;
+        margin: 0 0 20px 25px;
+    }
+    .advantages__subtitle{
+        font-size: 20px;
+    }
+    .advantages__descr{
+        font-size: 14px;
+    }
+    .consultation__descr{
+        font-size: 16px;
+    }
+    .carousel__inner{
+        width: 300px;
+    }
+    .slide{
+        width: 300px;
+    }
+    .catalog__tab{
+        font-size: 10px;
+    }
+    .button_mini{
+        width: 100px;
+    }
+    .feed__img{
+        margin-left: 15px;
+    }
+    .feed__text {
+        margin-left: 16px;
+        padding-right: 15px;
+    }
+    .footer__info{
+        width: 320px;
+        height: 150px;
+        padding: 10px 38px 30px 38px;
+    }
+    .footer__addr{
+        margin-bottom: 10px;
+    }
+    .footer__phone{
+        margin-bottom: 10px;
+    }
+    .modal{
+        width: 280px;
+    }
+    .modal__close{
+        top: 10px;
+        right: 10px;
+    }
+    .modal__subtitle{
+        font-size: 14px;
+    }
+    .modal__descr{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .feed-form{
+        width: 200px;
+    }
+}
